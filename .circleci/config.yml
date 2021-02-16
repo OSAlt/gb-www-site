@@ -1,9 +1,13 @@
 version: 2.1
 jobs:
  build:
-   machine: true
+   working_directory: /app
+   docker:
+     - image: docker:20.10.3
    steps:
      - checkout
+     - setup_remote_docker:
+         docker_layer_caching: false
      - run:
          name: Setup env
          command: ln -s env.template .env
@@ -12,16 +16,26 @@ jobs:
          command: |
            echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
      - run: 
-         name: build docker
-         command: docker-compose build
+         name: Install Docker Compose 
+         command: | 
+            set -x curl -L https://github.com/docker/compose/releases/download/1.25.3/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose &&  chmod +x /usr/local/bin/docker-compose
+     - run: 
+        name: Setup docker-compose alias
+        command: ln -s production.yml docker-compose.yml
+     - run: 
+        name: build docker
+        command: docker-compose build        
      - run:
          name: Docker Push
-         command: docker-compose push
+         command: docker-compose push ghost
 
 workflows:
-  validate_build: 
+  publish_image: 
     jobs:
       - build: 
+          context:
+            - DOCKER
           filters:
             branches:
               only: master          
+
