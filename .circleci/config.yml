@@ -1,0 +1,27 @@
+version: 2.1
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+     - run:
+         name: Setup env
+         command: ln -s env.template .env
+     - run: 
+         name: loginto docker
+         command: |
+           echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
+     - run: 
+         name: build docker
+         command: docker-compose build
+     - run:
+         name: Docker Push
+         command: docker-compose push
+
+workflows:
+  validate_build: 
+    jobs:
+      - build: 
+          filters:
+            branches:
+              only: master          
