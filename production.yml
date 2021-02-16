@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  ghost:
+    image: geekbeacon/gb-ghost:$ENV_VERSION
+    build:
+      context: . 
+      args:
+        VERSION: $ENV_VERSION
+    volumes:
+      - ./keys:/var/lib/ghost/keys/
+    ports:
+      - 8080:2368
+    env_file: .env
+  
