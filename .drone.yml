@@ -2,19 +2,12 @@ kind: pipeline
 name: default
 
 steps:
-  - name: test
-    image: docker/compose
-    volumes:
-      - name: docker_socket
-        path: /var/run/docker.sock
-    commands:
-      - ln -s env.template .env
-      - docker-compose -f production.yml build
-      - echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
-      - docker-compose push
-
-
-volumes:
-    - name: docker_socket
-      host:
-        path: /var/run/docker.sock
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: geekbeacon/gb-ghost
+      tags: 3.41.5
+      username:
+        from_secret: DOCKER_USER
+      password:
+        from_secret: DOCKER_PASS
