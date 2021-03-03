@@ -1,0 +1,46 @@
+<div class='js-grid__col o-grid__col--initial-grow o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l js-post-card-wrap c-post-card-wrap {{#is 'home'}} {{#if @first}} o-grid__col--4-4-m o-grid__col--4-4-l o-grid__col--initial-grow {{/if}} {{/is}}'>
+
+  <div class='c-post-card {{#is 'home'}} {{#if @first}} c-post-card--first {{/if}} {{/is}} {{#if feature_image}} c-post-card--with-image {{/if}} {{#unless feature_image}} c-post-card--no-image {{/unless}}'>
+    {{#if feature_image}}
+      <div class='c-post-card__media'>
+        <a href='{{ url }}' class='c-post-card__image-wrap' aria-hidden='true' tabindex='-1'>
+          <img
+            alt='{{ title }}'
+            class='c-post-card__image lazyload'
+            data-srcset='
+              {{ img_url feature_image size='md' }} 380w,
+              {{ img_url feature_image size='lg' }} 760w,
+              {{ img_url feature_image size='xl' }} 1520w'
+            data-src='{{img_url feature_image size='xl'}}'
+          >
+        </a>
+        {{#if featured}}
+          <span title='{{t 'Featured Post' }}'>
+            <span class='c-post-card--featured__icon' data-icon='ei-star' data-size='s'></span>
+          </span>
+        {{/if}}
+      </div>
+    {{/if}}
+
+    {{#unless feature_image}}
+      {{#if featured}}
+        <span title='{{t 'Featured Post' }}'>
+          <span class='c-post-card--featured__icon' data-icon='ei-star' data-size='s'></span>
+        </span>
+      {{/if}}
+    {{/unless}}
+
+    <div class='c-post-card__content {{#unless feature_image}} c-post-card__content--no-image {{/unless}}'>
+      <h2 class='c-post-card__title'>
+        <a href='{{ url }}' class='c-post-card__title-link'>
+          {{ title }}
+        </a>
+      </h2>
+      <div class='c-post-card__meta'>
+        <div class='c-post-card__author'>{{#primary_author}}<a href='{{ url }}'>{{ name }}</a>{{/primary_author}}</div>
+        <time class='c-post-card__date' datetime='{{ date format='YYYY-MM-DD' }}' title='{{ date format='DD MMMM YYYY' }}'>{{ date format='DD.MMM.YYYY' }}</time>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,189 @@
+/*------------------------------------*\
+  Components > Post Card
+\*------------------------------------*/
+
+.c-post-card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: $space-32;
+
+  @include mq($from: desktop) {
+    margin-bottom: $space-48;
+  }
+
+  &-wrap {
+    display: flex;
+
+  }
+
+  &--no-image {
+    justify-content: center;
+    background-color: var(--bg-card);
+    box-shadow: $space-8 $space-8 0 var(--bg-gray);
+
+    .c-post-card--featured__icon {
+      left: $space-24;
+      bottom: $space-24;
+
+      @include mq($until: tablet) {
+        right: 0;
+        bottom: 0;
+        left: auto;
+      }
+    }
+  }
+
+  &__media {
+    overflow: hidden;
+    position: relative;
+    background-color: var(--bg-gray);
+  }
+
+  &__image-wrap {
+    display: block;
+    padding-top: 100%;
+    transition: transform $global-transition ease;
+
+    @include mq($from: desktop) {
+      padding-top: 120%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+  }
+
+  &--featured {
+    &__icon {
+      position: absolute;
+      bottom: $space-24;
+      left: $space-24;
+      fill: var(--color-white);
+      background-color: rgba(var(--color-dark), .05);
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    background-color: var(--bg-card);
+    box-shadow: $space-8 $space-8 0 var(--bg-gray);
+    padding: $space-24;
+
+    @include mq($from: desktop) {
+      padding: $space-32;
+    }
+
+    &--no-image {
+      flex-grow: initial;
+      box-shadow: 0 0;
+    }
+  }
+
+  &__meta {
+    color: var(--color-gray);
+    font-size: $type-xs;
+    line-height: $type-xs-lh;
+    font-weight: $type-500;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__author {
+    margin-right: $space-16;
+
+    a {
+      color: var(--color-gray);
+      position: relative;
+      transition: $global-transition;
+
+      @include attention() {
+        color: var(--color-text);
+      }
+
+      &:after {
+        display: block;
+        content: '•';
+        bottom: 0;
+        right: -11px;
+        position: absolute;
+      }
+    }
+  }
+
+  &__title {
+    clear: both;
+    margin-bottom: $space-8;
+    font-size: $type--h-xxs;
+    line-height: $type--h-xxs-lh;
+    font-weight: $type-700;
+  }
+
+  &__title-link {
+    transition: color half($global-transition) ease-in-out;
+  }
+
+  @include attention() {
+    .c-post-card__image-wrap {
+      transform: scale(1.01);
+    }
+
+    .c-post-card__title-link {
+      color: var(--color-brand);
+    }
+  }
+}
+
+.c-post-card--first.c-post-card--with-image {
+  background-color: var(--bg-card);
+
+  .c-post-card-wrap:nth-of-type(1) & .c-post-card__image-wrap {
+    @include mq($from: tablet) {
+      padding-top: calc(80% - 32px);
+    }
+
+    @include mq($from: desktop) {
+      padding-top: calc(70% - 32px);
+    }
+  }
+
+  @include mq($from: tablet) {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iLTMwMiAzOTAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTMwMiAzOTAgMTQgMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KCS5zdDF7ZmlsbDojMkEyOTI5O30KPC9zdHlsZT4KPHJlY3QgeD0iLTMwMiIgeT0iMzkwIiBjbGFzcz0ic3QwIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiLz4KPHJlY3QgeD0iLTI5NiIgeT0iMzk2IiBjbGFzcz0ic3QxIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+Cjwvc3ZnPg==);
+    background-size: 12px;
+    background-color: var(--bg-white);
+    padding-bottom: 0;
+    border-bottom: 0;
+    display: block;
+    background-repeat: space;
+
+    .c-post-card__media {
+      width: 69.8%;
+    }
+
+    .c-post-card__content  {
+      width: 30.2%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-48px, -50%);
+      background: var(--bg-card);
+      word-break: break-word;
+      box-shadow: $space-8 $space-8 0 var(--bg-gray);
+    }
+  }
+
+  @include mq($from: desktop) {
+    .c-post-card__title {
+      font-size: $type--h-xs;
+      line-height: $type--h-xs-lh;
+    }
+  }
+}

@@ -1,16 +1,37 @@
 version: "3.7"
 services:
-  ghost:
-    image: geekbeacon/gb-ghost:latest
-    build:
-      context: .
-    volumes:
-      - ./keys:/var/lib/ghost/keys/
+  beta_site:
+    networks:
+      - shared_backend
+    image: geekbeacon/gb-ghost:3.41.5
     ports:
-      - 8080:2368
+      - "8890:2368"
+    restart: always
     env_file: .env
+    volumes:
+      - ./content:/var/lib/ghost/content/
+      - ./keys:/var/lib/ghost/keys/
+  mysql:
+    container_name: shared_mysql
+    image: mysql:5.7.29
+    restart: always
+    env_file: .env
+    volumes:
+      - ./data:/var/lib/mysql
+    networks:
+      - shared_backend
+    ports:
+      - 3306:3306
   mail:
     image: mailhog/mailhog:v1.0.1
     container_name: mail
     ports:
       - 8025:8025
+    networks:
+      - shared_backend
+
+networks:
+  shared_backend:
+    name: shared_backend
+    # use a custom driver, with no options
+    driver: bridge

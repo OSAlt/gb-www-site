@@ -1,0 +1,73 @@
+<ul class='c-share o-plain-list'>
+  <li class='c-share__item'>
+    <a class='c-share__link'
+       title='{{t 'Share on Twitter' }}'
+       aria-label='{{t 'Share on Twitter' }}'
+       href="https://twitter.com/share?text={{ encode title }}&amp;url={{ url absolute='true' }}"
+       onclick="window.open(this.href, 'twitter-share', 'width=550, height=235'); return false;">
+      <span class='icon icon--ei-sc-twitter icon--s c-share__icon'>
+        <svg id="ei-sc-twitter-icon" viewBox="0 0 50 50"><path d="M39.2 16.8c-1.1.5-2.2.8-3.5 1 1.2-.8 2.2-1.9 2.7-3.3-1.2.7-2.5 1.2-3.8 1.5-1.1-1.2-2.7-1.9-4.4-1.9-3.3 0-6.1 2.7-6.1 6.1 0 .5.1.9.2 1.4-5-.2-9.5-2.7-12.5-6.3-.5.7-.8 1.7-.8 2.8 0 2.1 1.1 4 2.7 5-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9-.5.1-1 .2-1.6.2-.4 0-.8 0-1.1-.1.8 2.4 3 4.2 5.7 4.2-2.1 1.6-4.7 2.6-7.5 2.6-.5 0-1 0-1.4-.1 2.4 1.9 5.6 2.9 9 2.9 11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z"></path></svg>
+      </span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link'
+       title='{{t 'Share on Facebook' }}'
+       aria-label='{{t 'Share on Facebook' }}'
+       href="https://www.facebook.com/sharer/sharer.php?u={{ url absolute='true' }}"
+       onclick="window.open(this.href, 'facebook-share', 'width=580, height=296'); return false;">
+       <span class='icon icon--ei-sc-facebook icon--s c-share__icon'>
+        <svg id="ei-sc-facebook-icon" viewBox="0 0 50 50"><path d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"></path></svg>
+      </span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link'
+      title='{{t 'Share on LinkedIn' }}'
+      aria-label='{{t 'Share on LinkedIn' }}'
+      href="https://www.linkedin.com/shareArticle?mini=true&url={{ url absolute='true' }}&title={{ encode title }}"
+      onclick="window.open(this.href, 'linkedin-share', 'width=580, height=296'); return false;">
+      <span class='icon icon--ei-sc-linkedin icon--s c-share__icon'>
+        <svg id="ei-sc-linkedin-icon" viewBox="0 0 50 50"><path d="M36.1 12H13.9c-1.1 0-1.9.8-1.9 1.9v22.2c0 1 .9 1.9 1.9 1.9h22.2c1.1 0 1.9-.8 1.9-1.9V13.9c0-1.1-.9-1.9-1.9-1.9zM20 34h-4V22h4v12zm-2-13.6c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM34 34h-4v-6c0-1.6-.4-3.2-2-3.2s-2 1.6-2 3.2v6h-4V22h4v1.4h.2c.5-1 1.8-1.8 3.3-1.8 3.7 0 4.5 2.4 4.5 5.4v7z"></path></svg>
+      </span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link'
+       title='{{t 'Share on Pinterest' }}'
+       aria-label='{{t 'Share on Pinterest' }}'
+       href="http://pinterest.com/pin/create/button/?url={{ url absolute='true' }}&media={{ feature_image }}&description={{ encode title }}"
+       onclick="window.open(this.href, 'pinterest-share', 'width=580, height=296'); return false;">
+       <span class='icon icon--ei-sc-pinterest icon--s c-share__icon'>
+        <svg id="ei-sc-pinterest-icon" viewBox="0 0 50 50"><path d="M25 10c-8.3 0-15 6.7-15 15 0 6.4 4 11.8 9.5 14-.1-1.2-.2-3 .1-4.3.3-1.2 1.8-7.5 1.8-7.5s-.4-.9-.4-2.2c0-2.1 1.2-3.6 2.7-3.6 1.3 0 1.9 1 1.9 2.1 0 1.3-.8 3.2-1.2 5-.4 1.5.7 2.7 2.2 2.7 2.7 0 4.7-2.8 4.7-6.9 0-3.6-2.6-6.1-6.3-6.1-4.3 0-6.8 3.2-6.8 6.5 0 1.3.5 2.7 1.1 3.4.1.1.1.3.1.4-.1.5-.4 1.5-.4 1.7-.1.3-.2.3-.5.2-1.9-.9-3-3.6-3-5.8 0-4.7 3.4-9.1 9.9-9.1 5.2 0 9.2 3.7 9.2 8.7 0 5.2-3.3 9.3-7.8 9.3-1.5 0-2.9-.8-3.4-1.7 0 0-.8 2.9-.9 3.6-.3 1.3-1.3 2.9-1.9 3.9 1.4.5 2.9.7 4.4.7 8.3 0 15-6.7 15-15s-6.7-15-15-15z"></path></svg>
+      </span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link'
+       title='{{t 'Share via Email' }}'
+       aria-label='{{t 'Share via Email' }}'
+       href="mailto:?subject={{ encode title }}&body={{ url absolute='true' }}">
+       <span class='icon icon--ei-envelope icon--s c-share__icon'>
+        <svg id="ei-envelope-icon" viewBox="0 0 50 50"><path opacity=".9" d="M31.796 24.244l9.97 9.97-1.415 1.414-9.97-9.97z"></path><path opacity=".9" d="M18.278 24.287l1.414 1.414-9.9 9.9-1.414-1.41z"></path><path d="M25 29.9c-1.5 0-3.1-.6-4.2-1.8L8.3 15.7l1.4-1.4 12.5 12.5c1.6 1.6 4.1 1.6 5.7 0l12.5-12.5 1.4 1.4-12.6 12.5c-1.1 1.1-2.7 1.7-4.2 1.7z"></path><path d="M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z"></path></svg>
+      </span>
+    </a>
+  </li>
+
+  <li class='c-share__item'>
+    <a class='c-share__link js-share__link--clipboard'
+       title="{{t 'Copy link' }}"
+       aria-label="{{t 'Copy link' }}"
+       href='#'
+       data-clipboard-text="{{ url absolute='true' }}"
+       onclick='return false;'>
+      <span class='icon icon--ei-link icon--s c-share__icon'>
+        <svg id="ei-link-icon" viewBox="0 0 50 50"><path d="M24 30.2c0 .2.1.5.1.8 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-2.8 0-5.1-2.3-5.1-5.1 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5.3 0 .5 0 .8.1l1.5-1.5c-.7-.3-1.5-.4-2.3-.4-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 3.8 3.1 6.9 6.9 6.9 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-.8-.1-1.6-.4-2.3L24 30.2z"></path><path d="M33 10.1c-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 .8.1 1.6.4 2.3l1.5-1.5c0-.2-.1-.5-.1-.8 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5 2.8 0 5.1 2.3 5.1 5.1 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-.3 0-.5 0-.8-.1l-1.5 1.5c.7.3 1.5.4 2.3.4 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-3.8-3.1-6.9-6.9-6.9z"></path><path d="M20 31c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l10-10c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-10 10c-.2.2-.4.3-.7.3z"></path></svg>
+      </span>
+    </a>
+  </li>
+</ul>

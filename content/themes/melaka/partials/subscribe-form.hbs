@@ -1,0 +1,11 @@
+<form data-members-form='subscribe' class='c-subscribe-form'>
+  <div class='form-group'>
+    <label for='{{ inputLabel }}' class='u-hidden-visually'>{{t 'Your email' }}</label>
+    <input type='email' class='c-subscribe-form__input' id='{{ inputLabel }}' placeholder='{{t 'Your email' }}' data-members-email>
+    <button type='submit' class='c-btn c-subscribe-form__btn'>{{t 'Subscribe' }}</button>
+  </div>
+
+  <div class='u-alert u-alert--success u-mt-16'>{{t 'Please check your inbox and click the link to confirm your subscription.' }}</div>
+  <div class='u-alert u-alert--invalid u-mt-16'>{{t 'Please enter a valid email address!' }}</div>
+  <div class='u-alert u-alert--error u-mt-16'>{{t 'An error occurred, please try again later.' }}</div>
+</form>

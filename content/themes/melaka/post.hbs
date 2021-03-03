@@ -1,0 +1,64 @@
+{{!< default}}
+
+{{#post}}
+
+<main class='o-wrapper'>
+  <article>
+    {{> post-hero }}
+
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s'>
+        <div class='c-{{ post_class }}'>
+          {{!-- Show the post if the user can access the post, this means that:
+          1. The post is public for anyone
+          2. The post is published for subscribers and the user is a subscriber
+          3. The post is for paid members only and the user is a paid member --}}
+          {{#if access}}
+            <div class='c-content'>
+              {{ content }}
+            </div>
+          {{/if}}
+
+          {{#if access}}
+            {{#if tags}}
+              <div class='c-tags'>
+                {{ tags separator='' }}
+              </div>
+            {{/if}}
+          {{/if}}
+
+          {{!-- If a user is not a member and he can accsess the post, that mean this post is published as public, in this case, we will show the subscribe form --}}
+          {{#if @labs.members}}
+            {{#unless @member}}
+              {{#if access}}
+                <div class='c-subscribe'>
+                  <div class='o-grid'>
+                    <div class='o-grid__col o-grid__col o-grid__col--3-4-m o-grid__col--3-4-l o-grid__col--center'>
+                      <div data-icon='ei-envelope' data-size='m' class='c-subscribe__icon'></div>
+                      <h3 class='u-type-sm u-mb-24 u-type-500 u-color-gray'>{{t 'Join the newsletter to receive the latest updates in your inbox.' }}</h3>
+                      {{> subscribe-form inputLabel='subscribe-email-post'}}
+                    </div>
+                  </div>
+                </div>
+              {{/if}}
+            {{/unless}}
+          {{/if}}
+
+          {{#if access}}
+            {{> disqus}}
+          {{/if}}
+
+          {{!-- If the post is published for subscribers and paid members but the user is not one of those, show the upgrade box  --}}
+          {{#unless access}}
+            {{> post-upgrade-cta }}
+          {{/unless}}
+
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+
+{{/post}}
+
+{{> related-posts}}

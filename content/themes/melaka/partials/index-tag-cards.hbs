@@ -1,0 +1,13 @@
+<div class='o-grid__col o-grid__col--full'>
+  <div class='c-title-bar'>
+    <h3 class='c-title-bar__title'>
+      <a href='{{ @site.url }}/tags' class='c-title-bar__link u-font-size-small'>Tags<span data-icon='ei-chevron-right' data-size='s'></span></a>
+    </h3>
+  </div>
+</div>
+
+{{#get 'tags' limit='4' include='count.posts' order='count.posts desc'}}
+  {{#foreach tags}}
+    {{> card-tag }}
+  {{/foreach}}
+{{/get}}

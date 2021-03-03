@@ -1,0 +1,35 @@
+{{!< ../default}}
+
+<div class='o-wrapper'>
+  {{#if @member}}
+    {{!-- Logged in: Redirect home --}}
+    <script>window.location = '{{@site.url}}';</script>
+  {{else}}
+    {{!-- Not logged in: Signin form --}}
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <div class='c-archive'>
+          <h2 class='c-archive__title'>{{t 'Welcome back!'}}</h2>
+          <p class='c-archive__description'>{{t 'Log in to your account again'}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='o-grid'>
+      <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--3-4-m o-grid__col--2-4-l'>
+        <form data-members-form='signin' class='c-subscribe-form'>
+          <div class='form-group'>
+            <label for='subscribe-email-signin' class='u-hidden-visually'>{{t 'Your email' }}</label>
+            <input type='email' class='c-subscribe-form__input' id='subscribe-email-signin' placeholder='{{t 'Your email' }}' data-members-email>
+            <button type='submit' class='c-btn c-btn--action c-subscribe-form__btn'>{{t 'Send login link' }}</button>
+          </div>
+
+          <div class='u-alert u-alert--success u-mt-16'>{{t 'Please check your inbox and click the link to complete the login.' }}</div>
+          <div class='u-alert u-alert--invalid u-mt-16'>{{t 'Please enter a valid email address!' }}</div>
+          <div class='u-alert u-alert--error u-mt-16'>{{t 'An error occurred, please try again later.' }}</div>
+        </form>
+        <p class='u-type-xs u-type-500 u-mt-16'>{{t "Don't have an account yet?"}} <a href='/signup/' class='u-link'>{{t 'Subscribe'}}</a></p>
+      </div>
+    </div>
+  {{/if}}
+</div>

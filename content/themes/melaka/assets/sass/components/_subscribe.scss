@@ -1,0 +1,57 @@
+/*------------------------------------*\
+  Components > Subscribe Form
+\*------------------------------------*/
+
+.c-subscribe {
+  text-align: center;
+  padding: $space-32;
+  background-color: var(--bg-card);
+  box-shadow: $space-8 $space-8 0 var(--bg-gray);
+
+  &__icon {
+    fill: var(--color-gray);
+  }
+
+  @include mq($from: tablet) {
+    padding: $space-64 0;
+  }
+}
+
+.c-subscribe-form {
+  .form-group {
+    display: flex;
+    border-radius: 50px;
+    background-color: var(--bg-gray);
+  }
+
+  &__btn {
+    flex: 3;
+  }
+
+  &__input[type='email'] {
+    border: 0;
+    margin: 0;
+    padding-left: ($space-24);
+    background-color: var(--bg-gray);
+    border-radius: 50px;
+    min-width: 1px; // Firefox issue: https://stackoverflow.com/a/27460682/558777
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  .u-alert {
+    display: none;
+  }
+
+  &.loading .c-btn {
+    @extend .c-btn--loading;
+  }
+
+  &.success .u-alert--success,
+  &.invalid .u-alert--invalid,
+  &.error   .u-alert--error  {
+    display: block;
+  }
+}

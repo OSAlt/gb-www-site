@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  Components > Post Upgrade CTA
+\*------------------------------------*/
+
+.c-post-upgrade-cta {
+  position: relative;
+  padding: $space-24;
+  text-align: center;
+  background-color: var(--bg-gray);
+  box-shadow: $space-8 $space-8 0 var(--bg-gray);
+
+  @include mq($from: tablet) {
+    padding: $space-40;
+  }
+
+  @include mq($from: desktop) {
+    padding: $space-56;
+  }
+
+  &__title {
+    font-size: $type--h-xs;
+    line-height: $type--h-xs-lh;
+    margin-bottom: $space-24;
+  }
+
+  .c-btn {
+    margin-bottom: $space-24;
+  }
+}

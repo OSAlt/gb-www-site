@@ -1,0 +1,67 @@
+/*------------------------------------*\
+  Components > Teaser
+\*------------------------------------*/
+
+.c-teaser-wrapper:not(:last-child) {
+  @include mq($until: desktop) {
+    margin-bottom: $space-32;
+  }
+}
+
+.c-teaser {
+  display: flex;
+  align-items: center;
+  padding: $space-24;
+  background-color: var(--bg-card);
+  border-radius: double($global-border-radius);
+
+  @if $light-mode {
+    box-shadow: inset 0 -1px 0 0 var(--color-border);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $space-32;
+  }
+
+  &__media {
+    margin-left: $space-24;
+    background-color: var(--bg-gray);
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__image {
+    display: block;
+    width: $space-88;
+    height: $space-72;
+    object-fit: cover;
+    background-color: var(--bg-gray);
+    border-radius: $global-border-radius;
+    box-shadow: half($space-8) half($space-8) 0 var(--bg-gray);
+  }
+
+  &__title {
+    display: inline;
+    font-size: $type-md;
+    line-height: $type-md-lh;
+    font-weight: $type-700;
+    transition: $global-faster-transition;
+  }
+
+  &__date {
+    display: block;
+    color: var(--color-gray);
+    font-size: $type-xs;
+    line-height: $type-xs-lh;
+    font-weight: $type-500;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+    margin-top: $space-8;
+  }
+
+  @include attention() {
+    color: var(--color-brand);
+  }
+}

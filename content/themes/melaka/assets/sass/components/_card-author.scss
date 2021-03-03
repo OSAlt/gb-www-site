@@ -1,0 +1,82 @@
+/*------------------------------------*\
+  Components > Card Author
+\*------------------------------------*/
+
+.c-card-author {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: $space-24;
+  background-color: var(--bg-card);
+  border-radius: double($global-border-radius);
+
+  @if $light-mode {
+    box-shadow: inset 0 -1px 0 0 var(--color-border);
+  }
+
+  &-wrap {
+    display: flex;
+    margin-bottom: $space-32;
+
+    @include mq($from: tablet) {
+      &:not(:last-child) {
+        border-right: 1px solid var(--color-border);
+      }
+
+      &:nth-child(2n) {
+        border-right: 0;
+      }
+    }
+
+    @include mq($from: desktop) {
+      &:nth-child(2n) {
+        border-right: 1px solid var(--color-border);
+      }
+
+      &:nth-child(3n) {
+        border-right: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  &__media {
+    width: $space-64;
+    height: $space-64;
+    margin-right: $space-16;
+    border-radius: 100%;
+    background-color: var(--bg-gray);
+  }
+
+  &__image {
+    width: $space-64;
+    height: $space-64;
+    min-width: $space-64;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 0 $space-4 var(--color-border);
+  }
+
+  &__name {
+    font-size: $type-sm;
+    line-height: $type-sm-lh;
+    font-weight: $type-700;
+    margin-bottom: 0;
+    transition: $global-transition;
+    letter-spacing: $global-letter-spacing;
+  }
+
+  &__bio {
+    color: var(--color-gray);
+    font-size: $type-xs;
+    line-height: $type-xs-lh;
+    word-break: break-word;
+  }
+
+  @include attention() {
+    color: var(--color-brand);
+  }
+}

@@ -1,0 +1,124 @@
+/*------------------------------------*\
+  Components > Off Canvas
+\*------------------------------------*/
+
+$off-canvas-width: 300px;
+
+.c-off-canvas-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  height: $space-24;
+  width: $space-24;
+  cursor: pointer;
+
+  @include mq($from: desktop) {
+    display: none;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 2px;
+    height: 2px;
+    width: $space-24;
+    background-color: var(--color-text);
+    cursor: pointer;
+    border-radius: double($global-border-radius);
+
+    &:before,
+    &:after {
+      display: block;
+      content: '';
+      height: 2px;
+      width: $space-24;
+      background-color: var(--color-text);
+      border-radius: double($global-border-radius);
+    }
+
+    &:before { transform: translateY(18px) }
+    &:after { transform: translateY(7px); }
+
+    .c-off-canvas-toggle--close & {
+      height: 2px;
+      background-color: transparent;
+
+      &:before,
+      &:after {
+        position: relative;
+        visibility: visible;
+        background: var(--color-text);
+      }
+
+      &:before {
+        top: 9px;
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        top: 7px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &--close {
+    @include mq($until: desktop) {
+      top: $space-40;
+      right: $space-24;
+    }
+  }
+}
+
+// prevent horizontal scroll during off-canvas
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.c-off-canvas-content {
+  @include mq($from: desktop) {
+    position: relative;
+  }
+}
+
+@include mq($until: desktop) {
+  .c-off-canvas-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: $off-canvas-width;
+    height: 100vh;
+    overflow-y: auto;
+    padding: $space-32;
+    background-color: var(--bg-color);
+    transform: translate3d($off-canvas-width, 0, 0);
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      &.is-active {
+        right: $off-canvas-width + half($space-16);
+      }
+    }
+  }
+
+  .c-off-canvas-container {
+    transition: transform $global-transition ease-in-out;
+
+    &.is-active {
+      transform: translate3d(- $off-canvas-width, 0, 0);
+
+      &:after {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, .2);
+      }
+    }
+  }
+}

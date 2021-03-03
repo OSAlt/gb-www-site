@@ -1,0 +1,53 @@
+<footer class='c-footer'>
+  <div class='o-grid'>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+      <p class='c-footer__headline'>{{t 'Tags' }}</p>
+
+      {{#get 'tags' limit='all'}}
+        <ul class='c-footer-list o-plain-list'>
+          {{#foreach tags}}
+            <li><a href='{{ url }}'>{{ name }}</a></li>
+          {{/foreach}}
+        </ul>
+      {{/get}}
+    </div>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+      <p class='c-footer__headline'>{{t 'Navigation' }}</p>
+
+      <ul class='c-footer-list o-plain-list'>
+        {{ navigation }}
+      </ul>
+    </div>
+
+    {{#if @labs.members}}
+      {{#unless @member}}
+        <div class='o-grid__col o-grid__col--initial-grow o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l'>
+          <p class='c-footer__headline'>{{t 'Subscribe' }}</p>
+          {{> subscribe-form inputLabel='subscribe-email-footer'}}
+        </div>
+      {{/unless}}
+    {{/if}}
+
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-footer__bottom'>
+        <div class='o-grid'>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            <div class='u-type-xs c-footer__copyright'>
+              &copy; {{ date format='YYYY' }} {{ @site.title }} &ndash;
+              {{{t 'Published with {ghostLink} & {themeLink}' ghostLink='<a href=\'https://ghost.org\'>Ghost</a>' themeLink='<a href=\'https://aspirethemes.com/themes/melaka\'>Melaka</a>' }}}
+            </div>
+          </div>
+
+          <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m'>
+            {{> social-icons }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>

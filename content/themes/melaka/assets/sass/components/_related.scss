@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  Components > Related
+\*------------------------------------*/
+
+.c-related {
+  .o-grid__col {
+    flex-grow: initial;
+  }
+
+  .c-post-card {
+    @include mq($from: desktop) {
+      margin-bottom: 0;
+    }
+  }
+}
