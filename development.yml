@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  beta_site:
+  site:
     networks:
       - shared_backend
     image: geekbeacon/gb-ghost:4.0.1 
