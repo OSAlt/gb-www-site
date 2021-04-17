@@ -1,0 +1,40 @@
+<div><div class='o-grid'>
+  <div class='js-grid__col o-grid__col o-grid__col--4-4-s {{#unless feature_image}} o-grid__col--center o-grid__col--2-3-m {{/unless}}'>
+
+    <div class='c-post-hero {{#unless feature_image}} c-post-hero--no-image {{/unless}}'>
+      {{#if feature_image}}
+        <div class='c-post-hero__media'>
+          <div class='c-post-hero__image-wrap'>
+          <img
+            alt='{{ title }}'
+            class='c-post-hero__image lazyload'
+            data-srcset='
+              {{ img_url feature_image size='md' }} 380w,
+              {{ img_url feature_image size='lg' }} 760w,
+              {{ img_url feature_image size='xl' }} 1520w'
+            sizes='(min-width: 1200px) 759px, (min-width: 640px) 64.07vw, calc(100vw - 48px)'
+            data-src='{{ img_url feature_image size='xl' }}'
+            width='760' height='500'
+          >
+          </div>
+        </div>
+      {{/if}}
+
+      <div class='c-post-hero__content {{#is 'page'}} c-post-hero__content--page {{/is}} {{#unless feature_image}} c-post-hero__content--no-image {{/unless}}'>
+        <h1 class='c-post-hero__title'>{{ title }}</h1>
+        {{#is 'post'}}
+          <div class='c-post-hero__meta'>
+            <div class='c-post-hero__author'>
+              {{#primary_author}}<a href='{{ url }}'>{{ name }}</a>{{/primary_author}}
+            </div>
+            <time class='c-post-hero__date' datetime='{{ date format='YYYY-MM-DD' }}' title='{{ date format='DD MMMM YYYY' }}'>{{ date format='DD.MMM.YYYY' }}</time>
+          </div>
+        {{/is}}
+      </div>
+    </div>
+
+    {{#is 'post'}}
+      {{> share }}
+    {{/is}}
+  </div>
+</div></div>

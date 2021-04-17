@@ -1,0 +1,51 @@
+routes:
+  /signup/: members/signup
+  /signin/: members/signin
+  /account/: members/account
+  /:
+    data:
+      post:
+        resource: pages
+        type: read
+        slug: landing
+    template:
+      #- page
+      - custom-home
+  /posts/:
+    controller: channel
+    template: index
+    #filter: tag:[podcast,dungeon-source]
+
+collections:
+  /announcements/:
+    permalink: /announcements/{slug}/
+    template: index
+    filter: tag:announcements
+  /gaming/:
+    permalink: /gaming/{slug}/
+    template: index
+    filter: tag:gaming
+  /osalt/:
+    permalink: /osalt/{slug}/
+    template: index
+    filter: tag:osalt
+  /squirrel-army/:
+    permalink: /squirrel-army/{slug}/
+    template: index
+    filter: tag:squirrel-army
+  /geeks-abroad/:
+    permalink: /geeks-abroad/{slug}/
+    template: index
+    filter: tag:geeks-abroad
+  /podcast/:
+    permalink: /podcast/{slug}/
+    template: index
+    filter: tag:podcast
+  /dnd/:
+    permalink: /dnd/{slug}/
+    template: index
+    filter: tag:dungeon-source
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

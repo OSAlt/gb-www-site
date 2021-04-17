@@ -1,0 +1,77 @@
+{
+  "name": "melaka-custom",
+  "description": "Customized version of minimal blog and magazine Ghost theme titled melaka by Kankuro",
+  "version": "1.0",
+  "engines": {
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "@primer/css": "^15.2.0",
+    "clipboard": "^2.0.6",
+    "concat": "^3.0.0",
+    "evil-icons": "^1.10.1",
+    "fs": "0.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.12.0",
+    "jshint-stylish": "^2.2.0",
+    "lazysizes": "^5.2.2",
+    "lunr": "^0.7.2",
+    "lunr-languages": "^1.4.0",
+    "normalize.css": "^8.0.1",
+    "prismjs": "^1.22.0",
+    "run-sequence": "^2.2.1",
+    "sass-mq": "^5.0.1"
+  },
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-rtlcss": "^1.4.1",
+    "gulp-zip": "^5.0.2",
+    "node-sass": "^4.14.1"
+  },
+  "author": {
+    "name": "Aspire Themes",
+    "email": "aspirethemes@gmail.com",
+    "url": "https://aspirethemes.com/"
+  },
+  "config": {
+    "posts_per_page": 10,
+    "image_sizes": {
+      "xs": {
+        "width": 128
+      },
+      "sm": {
+        "width": 176
+      },
+      "md": {
+        "width": 380
+      },
+      "ml": {
+        "width": 472
+      },
+      "lg": {
+        "width": 760
+      },
+      "xl": {
+        "width": 1520
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  Components > Archive
+\*------------------------------------*/
+
+.c-archive {
+  text-align: center;
+  margin-top: $space-16;
+  margin-bottom: $space-32;
+
+  @include mq($from: desktop) {
+    margin-top: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $type--h-xs;
+    line-height: $type--h-xs-lh;
+
+    @include mq($from: desktop) {
+      font-size: $type--h-sm;
+      line-height: $type--h-sm-lh;
+    }
+  }
+
+  &__description {
+    margin-top: $space-8;
+    font-size: $type-md;
+    line-height:  $type-md-lh;
+
+    @include mq($from: desktop) {
+      font-size: $type-lg;
+      line-height: $type-lg-lh;
+    }
+  }
+}

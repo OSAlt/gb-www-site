@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  Components > Pagination
+\*------------------------------------*/
+
+.c-pagination {
+  padding: $space-16;
+  margin-bottom: $space-32;
+  background-color: var(--bg-gray);
+
+  @include mq($from: tablet) {
+    padding: $space-24 0;
+  }
+}
