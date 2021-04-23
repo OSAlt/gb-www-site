@@ -6,7 +6,7 @@ services:
       - shared_mysql
     networks:
       - shared_backend
-    image: geekbeacon/gb-ghost:4.0.1 
+    image: geekbeacon/gb-ghost:4.3.2 
     ports:
       - "8890:2368"
     restart: always
