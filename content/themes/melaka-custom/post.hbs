@@ -28,7 +28,7 @@
           {{/if}}
 
           {{!-- If a user is not a member and he can accsess the post, that mean this post is published as public, in this case, we will show the subscribe form --}}
-          {{#if @labs.members}}
+          {{!-- {{#if @labs.members}}
             {{#unless @member}}
               {{#if access}}
                 <div class='c-subscribe'>
@@ -42,7 +42,7 @@
                 </div>
               {{/if}}
             {{/unless}}
-          {{/if}}
+          {{/if}} --}}
           {{!-- Discourse forum comments --}}
           <div id='discourse-comments'></div>
 
