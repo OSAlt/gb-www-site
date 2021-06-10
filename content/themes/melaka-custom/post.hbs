@@ -1,8 +1,4 @@
-{{!< default}}
-
-{{#post}}
-
-<main class='o-wrapper'>
+{{!< default}} {{#post}} <main class='o-wrapper'>
   <article>
     {{> post-hero }}
 
@@ -14,65 +10,72 @@
           2. The post is published for subscribers and the user is a subscriber
           3. The post is for paid members only and the user is a paid member --}}
           {{#if access}}
-            <div class='c-content'>
-              {{ content }}
-            </div>
+          <div class='c-content'>
+            {{ content }}
+          </div>
           {{/if}}
 
           {{#if access}}
-            {{#if tags}}
-              <div class='c-tags'>
-                {{ tags separator='' }}
-              </div>
-            {{/if}}
+          {{#if tags}}
+          <div class='c-tags'>
+            {{ tags separator='' }}
+          </div>
+          {{/if}}
           {{/if}}
 
-          {{!-- If a user is not a member and he can accsess the post, that mean this post is published as public, in this case, we will show the subscribe form --}}
+          {{!-- If a user is not a member and he can accsess the post, that mean this post is published as public, in
+          this case, we will show the subscribe form --}}
           {{!-- {{#if @labs.members}}
-            {{#unless @member}}
-              {{#if access}}
-                <div class='c-subscribe'>
-                  <div class='o-grid'>
-                    <div class='o-grid__col o-grid__col o-grid__col--3-4-m o-grid__col--3-4-l o-grid__col--center'>
-                      <div data-icon='ei-envelope' data-size='m' class='c-subscribe__icon'></div>
-                      <h3 class='u-type-sm u-mb-24 u-type-500 u-color-gray'>{{t 'Join the newsletter to receive the latest updates in your inbox.' }}</h3>
-                      {{> subscribe-form inputLabel='subscribe-email-post'}}
-                    </div>
-                  </div>
-                </div>
-              {{/if}}
-            {{/unless}}
+          {{#unless @member}}
+          {{#if access}}
+          <div class='c-subscribe'>
+            <div class='o-grid'>
+              <div class='o-grid__col o-grid__col o-grid__col--3-4-m o-grid__col--3-4-l o-grid__col--center'>
+                <div data-icon='ei-envelope' data-size='m' class='c-subscribe__icon'></div>
+                <h3 class='u-type-sm u-mb-24 u-type-500 u-color-gray'>{{t 'Join the newsletter to receive the latest
+                  updates in your inbox.' }}</h3>
+                {{> subscribe-form inputLabel='subscribe-email-post'}}
+              </div>
+            </div>
+          </div>
+          {{/if}}
+          {{/unless}}
           {{/if}} --}}
           {{!-- Discourse forum comments --}}
+          {{^is "preview"}}
           <div id='discourse-comments'></div>
 
           <script type="text/javascript">
-            DiscourseEmbed = { discourseUrl: 'https://forum.geekbeacon.org/',
-                               discourseEmbedUrl: '{{url absolute="true"}}' };
+            DiscourseEmbed = {
+              discourseUrl: 'https://forum.geekbeacon.org/',
+              discourseEmbedUrl: '{{url absolute="true"}}'
+            };
 
-            (function() {
+            (function () {
               var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
               d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
             })();
           </script>
+          {{/is}}
 
           {{!-- Disqus section (comments) --}}
           {{#if access}}
-            {{!-- {{> disqus}} --}}
+          {{!-- {{> disqus}} --}}
           {{/if}}
 
-          {{!-- If the post is published for subscribers and paid members but the user is not one of those, show the upgrade box  --}}
+          {{!-- If the post is published for subscribers and paid members but the user is not one of those, show the
+          upgrade box --}}
           {{#unless access}}
-            {{> post-upgrade-cta }}
+          {{> post-upgrade-cta }}
           {{/unless}}
 
         </div>
       </div>
-    </article>
+  </article>
   </div>
-</main>
+  </main>
 
-{{/post}}
+  {{/post}}
 
-{{> related-posts}}
+  {{> related-posts}}
