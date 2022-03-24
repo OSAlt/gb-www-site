@@ -1,5 +1,3 @@
-[![Build Status](https://cloud.drone.io/api/badges/OSAlt/gb-docker-ghost/status.svg)](https://cloud.drone.io/OSAlt/gb-docker-ghost)
-
 # GeekBeacon Site
 
 This is going to be used as a base for much of our docker deployment.  
