@@ -3,7 +3,7 @@ services:
   site:
     networks:
       - shared_backend
-    image: geekbeacon/gb-ghost:4.8.4 
+    image: geekbeacon/gb-ghost:4.41.1
     ports:
       - "8890:2368"
     restart: always
