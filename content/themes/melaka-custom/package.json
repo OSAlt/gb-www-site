@@ -29,7 +29,7 @@
     "gulp-size": "3.0.0",
     "gulp-uglify": "3.0.2",
     "gulp-util": "3.0.8",
-    "jshint": "2.12.0",
+    "jshint": "2.13.4",
     "jshint-stylish": "2.2.1",
     "lazysizes": "5.2.2",
     "lunr": "0.7.2",
