@@ -33,18 +33,31 @@ collections:
     permalink: /squirrel-army/{slug}/
     template: index
     filter: tag:squirrel-army
-  /geeks-abroad/:
-    permalink: /geeks-abroad/{slug}/
+  /geeksabroad/:
+    permalink: /geeksabroad/{slug}/
     template: index
-    filter: tag:geeks-abroad
+    filter: tag:geeksabroad
   /podcast/:
     permalink: /podcast/{slug}/
     template: index
     filter: tag:podcast
+  /events/:
+    permalink: /events/{slug}/
+    template: index
+    filter: tag:events
   /dnd/:
     permalink: /dnd/{slug}/
     template: index
     filter: tag:dungeon-source
+  /news/:
+    permalink: /news/{slug}/
+    template: index
+    filter: tag:news
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: tag:-[announcements,gaming,osalt,squirrel-army,geeksabroad,podcast,events,dungeon-source,news]
+
 
 taxonomies:
   tag: /tag/{slug}/

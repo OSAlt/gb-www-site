@@ -41,28 +41,30 @@
           {{/if}}
           {{/unless}}
           {{/if}} --}}
-          {{!-- Discourse forum comments --}}
+          {{!-- Disqus section (comments) --}}
           {{^is "preview"}}
-          <div id='discourse-comments'></div>
+          <div id='disqus_thread'></div>
+          <script>
+            var disqus_shortname = 'geek-beacon'; // required: replace `aspirethemes-demos` with your Disqus shortname
 
-          <script type="text/javascript">
-            DiscourseEmbed = {
-              discourseUrl: 'https://forum.geekbeacon.org/',
-              discourseEmbedUrl: '{{url absolute="true"}}'
+            // DON'T EDIT BELOW THIS LINE
+            var disqus_config = function () {
+              this.page.url = '{{url absolute="true"}}'
+              this.page.identifier = 'ghost-{{comment_id}}';
             };
 
-            (function () {
-              var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-              d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-            })();
-          </script>
-          {{/is}}
+            var d = document, s = d.createElement('script');
 
-          {{!-- Disqus section (comments) --}}
-          {{#if access}}
-          {{!-- {{> disqus}} --}}
-          {{/if}}
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          </script>
+          {{!-- CommentBox --}}
+          <div class="commentbox"></div>
+          <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+          <script>commentBox('5768824825577472-proj')</script
+          {{/is}}
 
           {{!-- If the post is published for subscribers and paid members but the user is not one of those, show the
           upgrade box --}}
@@ -72,7 +74,7 @@
 
         </div>
       </div>
-  </div>
+    </div>
   </article>
   </main>
 
