@@ -1,0 +1,50 @@
+{
+  "Loading": "Chargement",
+  "More Posts": "Plus d’articles",
+
+  "Recent Posts": "Articles Récents",
+  "Featured Post": "Billet en vedette",
+  "Page Not Found": "Page non trouvée",
+  "Load Comments": "Commentaires",
+  "You might also like": "Vous pourriez être intéressé par",
+  "Tags": "Étiquettes",
+  "Authors": "Auteurs",
+  "Navigation": "La navigation",
+  "Published with {ghostLink} & {themeLink}": "Publié avec {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Partager sur Twitter",
+  "Share on Facebook": "Partager sur Facebook",
+  "Share on LinkedIn": "Partager sur LinkedIn",
+  "Share on Pinterest": "Partager sur Pinterest",
+  "Share via Email": "Partager par Courriel",
+  "Copy link": "Copier le lien",
+  "Link copied to clipboard": "Lien copié dans le presse-papier",
+
+  "Search": "Rechercher",
+  "Search {siteTitle}": "Rechercher dans {siteTitle}",
+  "Type to Search": "Tapez pour rechercher",
+  "Enable dark mode": "Activer le mode sombre",
+
+  "Account": "Compte",
+  "Log in": "Se connecter",
+  "Continue": "Continuez",
+  "Subscribe": "S’abonner",
+  "Your email": "Votre adresse email",
+  "Please check your inbox and click the link to complete the login.": "Veuillez vérifier votre boîte de réception et cliquer sur le lien pour terminer la connexion.",
+  "Please check your inbox and click the link to confirm your subscription.": "Veuillez vérifier votre boîte de réception et cliquez sur le lien pour confirmer votre abonnement.",
+  "Please enter a valid email address!": "S'il vous plaît, mettez une adresse email valide!",
+  "An error occurred, please try again later.": "Une erreur est survenue, veuillez réessayer plus tard.",
+
+  "Already have an account?": "Vous avez déjà un compte?",
+  "Don't have an account yet?": "Vous n'avez pas encore de compte?",
+
+  "This post is for paying subscribers only": "Cet article est réservé aux abonnements payants",
+  "This post is for subscribers only": "Cet article est réservé aux abonnés",
+  "This post is for subscribers on the ": "Ce message est pour les abonnés sur le ",
+  "This page is for paying subscribers only": "Cette page est réservée aux abonnements payants",
+  "This page is for subscribers only": "Cet page est réservé aux abonnés",
+  "This page is for subscribers on the ": "Cette page est réservée aux abonnés du ",
+  "Upgrade your account": "Ameliorez votre compte",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Inscrivez-vous à la newsletter pour recevoir les dernières mises à jour dans votre boîte de réception."
+}

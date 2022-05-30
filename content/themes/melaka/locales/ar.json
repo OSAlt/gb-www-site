@@ -1,0 +1,50 @@
+{
+  "Loading": "جار التحميل",
+  "More Posts": "تحميل المزيد",
+
+  "Recent Posts": "المشاركات الاخيرة",
+  "Featured Post": "مشاركة مميزة",
+  "Page Not Found": "الصفحة غير موجودة",
+  "Load Comments": "تحميل التعليقات",
+  "You might also like": "مواضيع متشابهه",
+  "Tags": "التصنيفات",
+  "Authors": "المؤلفون",
+  "Navigation": "التنقل",
+  "Published with {ghostLink} & {themeLink}": "نشرت مع {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "انشر على تويتر",
+  "Share on Facebook": "انشر على الفيسبوك",
+  "Share on LinkedIn": "انشر على لينكد إن",
+  "Share on Pinterest": "انشر على بينترست",
+  "Share via Email": "انشر على الإيميل",
+  "Copy link": "انسخ الرابط",
+  "Link copied to clipboard": "تم نسخ الرابط",
+
+  "Search": "بحث",
+  "Search {siteTitle}": "بحث {siteTitle}",
+  "Type to Search": "اكتب للبحث",
+  "Enable dark mode": "تمكين الوضع المظلم",
+
+  "Account": "الحساب",
+  "Log in": "تسجيل الدخول",
+  "Continue": "استمر",
+  "Subscribe": "اشترك",
+  "Your email": "عنوان بريدك الإلكتروني",
+  "Please check your inbox and click the link to complete the login.": "يرجى التحقق من صندوق الوارد الخاص بك والنقر فوق الارتباط لإكمال تسجيل الدخول.",
+  "Please check your inbox and click the link to confirm your subscription.": "يرجى التحقق من صندوق الوارد الخاص بك والنقر على الرابط لتأكيد اشتراكك.",
+  "Please enter a valid email address!": "من فضلك أدخل بريد أليكترونى صحيح!",
+  "An error occurred, please try again later.": "لقد حدث خطأ، رجاء أعد المحاولة لاحقا.",
+
+  "Already have an account?": "هل لديك حساب؟",
+  "Don't have an account yet?": "لا تملك حسابا حتى الآن؟",
+
+  "This post is for paying subscribers only": "هذه المشاركة للمشتركين في باقة فقط",
+  "This post is for subscribers only": "هذا المنشور مخصص للمشتركين فقط",
+  "This post is for subscribers on the ": "هذا المنشور للمشتركين على ",
+  "This page is for paying subscribers only": "هذه المشاركة للمشتركين في باقة فقط",
+  "This page is for subscribers only": "هذا المنشور مخصص للمشتركين فقط",
+  "This page is for subscribers on the ": "هذه الصفحة للمشتركين على ",
+  "Upgrade your account": "قم بترقية حسابك",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "انضم إلى النشرة الإخبارية لتلقي آخر التحديثات."
+}

@@ -1,0 +1,50 @@
+{
+  "Loading": "Loading",
+  "More Posts": "More Posts",
+
+  "Recent Posts": "Recent Posts",
+  "Featured Post": "Featured Post",
+  "Page Not Found": "Page Not Found",
+  "Load Comments": "Load Comments",
+  "You might also like": "You might also like",
+  "Tags": "Tags",
+  "Authors": "Authors",
+  "Navigation": "Navigation",
+  "Published with {ghostLink} & {themeLink}": "Published with {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Share on Twitter",
+  "Share on Facebook": "Share on Facebook",
+  "Share on LinkedIn": "Share on LinkedIn",
+  "Share on Pinterest": "Share on Pinterest",
+  "Share via Email": "Share via Email",
+  "Copy link": "Copy link",
+  "Link copied to clipboard": "Link copied to clipboard",
+
+  "Search": "Search",
+  "Search {siteTitle}": "Search {siteTitle}",
+  "Type to Search": "Type to Search",
+  "Enable dark mode": "Enable dark mode",
+
+  "Account": "Account",
+  "Log in": "Log in",
+  "Continue": "Continue",
+  "Subscribe": "Subscribe",
+  "Your email": "Your email",
+  "Please check your inbox and click the link to complete the login.": "Please check your inbox and click the link to complete the login.",
+  "Please check your inbox and click the link to confirm your subscription.": "Please check your inbox and click the link to confirm your subscription.",
+  "Please enter a valid email address!": "Please enter a valid email address!",
+  "An error occurred, please try again later.": "An error occurred, please try again later.",
+
+  "Already have an account?": "Already have an account?",
+  "Don't have an account yet?": "Don't have an account yet?",
+
+  "This post is for paying subscribers only": "This post is for paying subscribers only",
+  "This post is for subscribers only": "This post is for subscribers only",
+  "This post is for subscribers on the ": "This post is for subscribers on the ",
+  "This page is for paying subscribers only": "This page is for paying subscribers only",
+  "This page is for subscribers only": "This page is for subscribers only",
+  "This page is for subscribers on the ": "This page is for subscribers on the ",
+  "Upgrade your account": "Upgrade your account",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Join the newsletter to receive the latest updates in your inbox."
+}

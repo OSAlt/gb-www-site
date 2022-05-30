@@ -1,12 +1,12 @@
 version: "3.7"
 
 services:
-  beta_site:
+  site:
     external_links:
       - shared_mysql
     networks:
       - shared_backend
-    image: geekbeacon/gb-ghost:4.41.1
+    image: geekbeacon/gb-ghost:5.0.0
     ports:
       - "8890:2368"
     restart: always

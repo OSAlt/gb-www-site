@@ -1,0 +1,50 @@
+{
+  "Loading": "Cargando",
+  "More Posts": "Más Artículos",
+
+  "Recent Posts": "Reciente Artículos",
+  "Featured Post": "Artículo Destacada",
+  "Page Not Found": "Página no encontrada",
+  "Load Comments": "Comentarios",
+  "You might also like": "Te podría interesar",
+  "Tags": "Etiquetas",
+  "Authors": "auteurs",
+  "Navigation": "Navegación",
+  "Published with {ghostLink} & {themeLink}": "Publicado con {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Compartir en Twitter",
+  "Share on Facebook": "Compartir en Facebook",
+  "Share on LinkedIn": "Compartir en LinkedIn",
+  "Share on Pinterest": "Compartir en Pinterest",
+  "Share via Email": "Compartir via Email",
+  "Copy link": "Copiar link",
+  "Link copied to clipboard": "Enlace copiado al portapapeles",
+
+  "Search": "Buscar",
+  "Search {siteTitle}": "Buscar {siteTitle}",
+  "Type to Search": "Escribe para buscar",
+  "Enable dark mode": "Habilitar el modo oscuro",
+
+  "Account": "Cuenta",
+  "Log in": "Registrarse",
+  "Continue": "Hacer continuación",
+  "Subscribe": "Suscríbete",
+  "Your email": "Tu correo electrónico",
+  "Please check your inbox and click the link to complete the login.": "Verifique su bandeja de entrada y haga clic en el enlace para completar el inicio de sesión.",
+  "Please check your inbox and click the link to confirm your subscription.": "Verifique su bandeja de entrada y haga clic en el enlace para confirmar su suscripción.",
+  "Please enter a valid email address!": "Por favor, introduce una dirección de correo electrónico válida!",
+  "An error occurred, please try again later.": "Se produjo un error. Vuelve a intentarlo más tarde.",
+
+  "Already have an account?": "¿Ya tienes una cuenta?",
+  "Don't have an account yet?": "¿Aún no tienes una cuenta?",
+
+  "This post is for paying subscribers only": "Esta publicación es solo para suscriptores de pago",
+  "This post is for subscribers only": "Esta publicación es solo para suscriptores",
+  "This post is for subscribers on the ": "Esta publicación es para suscriptores en el ",
+  "This page is for paying subscribers only": "Esta página es solo para suscriptores de pago",
+  "This page is for subscribers only": "Esta página es solo para suscriptores",
+  "This page is for subscribers on the ": "Esta página es para suscriptores en el ",
+  "Upgrade your account": "Actualiza tu cuenta",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Únase al boletín para recibir las últimas actualizaciones en su bandeja de entrada."
+}

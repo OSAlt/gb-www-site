@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  Components > Logo
+\*------------------------------------*/
+
+.c-logo {
+  &__link {
+    display: inline-block;
+    line-height: 1;
+    font-size: $type--h-xxs-lh;
+    font-weight: $type-600;
+    transition: color $global-faster-transition ease-in-out;
+
+    @include mq($from: tablet) {
+      font-size: $type--h-xs-lh;
+    }
+
+    @include attention() {
+      color: var(--color-brand);
+    }
+  }
+
+  &__img {
+    max-height: $space-32;
+  }
+}
