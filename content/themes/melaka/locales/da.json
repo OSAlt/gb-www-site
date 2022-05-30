@@ -1,0 +1,51 @@
+{
+  "Loading": "Indlæser",
+  "More Posts": "Flere indlæg",
+
+  "Recent Posts": "Seneste indlæg",
+  "Featured Post": "Udvalgte indlæg",
+  "Page Not Found": "Siden blev ikke fundet",
+  "Load Comments": "Kommentarer",
+  "You might also like": "Du kan være interesseret i",
+  "Tags": "Tags",
+  "Authors": "Forfattere",
+  "Navigation": "Navigation",
+  "Published with {ghostLink} & {themeLink}": "Udgivet med {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Del på Twitter",
+  "Share on Facebook": "Del på Facebook",
+  "Share on LinkedIn": "Del på LinkedIn",
+  "Share on Pinterest": "Del på Pinterest",
+  "Share via Email": "Del via e-mail",
+  "Copy link": "Kopier link",
+  "Link copied to clipboard": "Link kopieret til udklipsholder",
+
+  "Search": "Søg",
+  "Search {siteTitle}": "Søg {siteTitle}",
+  "Type to Search": "Skriv til Søg",
+  "Enable dark mode": "Aktivér mørk tilstand",
+
+  "Account": "Konto",
+  "Log in": "Log ind",
+  "Log out": "Log ud",
+  "Continue": "Blive ved",
+  "Subscribe": "Tilmeld",
+  "Your email": "Din email adresse",
+  "Please check your inbox and click the link to complete the login.": "Kontroller din indbakke, og klik på linket for at fuldføre login.",
+  "Please check your inbox and click the link to confirm your subscription.": "Kontroller din indbakke, og klik på linket for at bekræfte dit abonnement.",
+  "Please enter a valid email address!": "Indtast venligst en gyldig e-mailadresse!",
+  "An error occurred, please try again later.": "Der opstod en fejl. Prøv venligst igen senere.",
+
+  "Already have an account?": "har du allerede en bruger?",
+  "Don't have an account yet?": "Har du ikke en konto endnu?",
+
+  "This post is for paying subscribers only": "Dette indlæg er kun til betalende abonnenter",
+  "This post is for subscribers only": "Dette indlæg er kun til abonnenter",
+  "This post is for subscribers on the ": "Dette indlæg er for abonnenter på ",
+  "This page is for paying subscribers only": "Denne side er kun beregnet til betalende abonnenter",
+  "This page is for subscribers only": "Denne side er kun til abonnenter",
+  "This page is for subscribers on the ": "Denne side er for abonnenter på ",
+  "Upgrade your account": "Opgrader din konto",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Deltag i nyhedsbrevet for at modtage de seneste opdateringer i din indbakke."
+}

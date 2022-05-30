@@ -1,0 +1,50 @@
+{
+  "Loading": "Caricamento",
+  "More Posts": "Altri articoli",
+
+  "Recent Posts": "articoli recenti",
+  "Featured Post": "Post in evidenza",
+  "Page Not Found": "Pagina non trovata",
+  "Load Comments": "Commenti",
+  "You might also like": "Potresti essere interessato a",
+  "Tags": "Tags",
+  "Authors": "Autori",
+  "Navigation": "Navigazione",
+  "Published with {ghostLink} & {themeLink}": "Pubblicato con {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Condividi su Twitter",
+  "Share on Facebook": "Condividi su Facebook",
+  "Share on LinkedIn": "Condividi su LinkedIn",
+  "Share on Pinterest": "Condividi su Pinterest",
+  "Share via Email": "Condividi via email",
+  "Copy link": "Copia link",
+  "Link copied to clipboard": "Link copiato negli appunti",
+
+  "Search": "Ricerca",
+  "Search {siteTitle}": "Ricerca {siteTitle}",
+  "Type to Search": "Digita per cercare",
+  "Enable dark mode": "Abilita modalità oscura",
+
+  "Account": "account",
+  "Log in": "Registrati",
+  "Continue": "Continua",
+  "Subscribe": "sottoscrivi",
+  "Your email": "Tu correo electrónico",
+  "Please check your inbox and click the link to complete the login.": "Controlla la tua casella di posta e fai clic sul link per completare il login.",
+  "Please check your inbox and click the link to confirm your subscription.": "Controlla la tua casella di posta e fai clic sul link per confermare l'abbonamento.",
+  "Please enter a valid email address!": "Si prega di inserire un indirizzo email valido!",
+  "An error occurred, please try again later.": "Si è verificato un errore, riprova più tardi.",
+
+  "Already have an account?": "Hai già un account?",
+  "Don't have an account yet?": "Non hai ancora un conto?",
+
+  "This post is for paying subscribers only": "Questo post è solo per abbonati paganti",
+  "This post is for subscribers only": "Questo post è solo per gli abbonati",
+  "This post is for subscribers on the ": "Questo post è per gli abbonati su ",
+  "This page is for paying subscribers only": "Questa pagina è riservata ai soli abbonati paganti",
+  "This page is for subscribers only": "Questo pagina è solo per gli abbonati",
+  "This page is for subscribers on the ": "Questa pagina è per gli iscritti al ",
+  "Upgrade your account": "Aggiorna il tuo account",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Iscriviti alla newsletter per ricevere gli ultimi aggiornamenti nella tua casella di posta."
+}

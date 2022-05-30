@@ -1,0 +1,50 @@
+{
+  "Loading": "Ladataan",
+  "More Posts": "Lisää artikkelit",
+
+  "Recent Posts": "Uusimmat artikkelit",
+  "Featured Post": "Esitetty artikkelit",
+  "Page Not Found": "Sivua ei löydetty",
+  "Load Comments": "Kommentit",
+  "You might also like": "Saatat olla kiinnostunut",
+  "Tags": "Tags",
+  "Authors": "Tekijät",
+  "Navigation": "suunnistus",
+  "Published with {ghostLink} & {themeLink}": "Julkaistu {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Jaa Twitter",
+  "Share on Facebook": "Jaa Facebook",
+  "Share on LinkedIn": "Jaa LinkedIn",
+  "Share on Pinterest": "Jaa Pinterest",
+  "Share via Email": "Jaa sähköpostitse",
+  "Copy link": "Kopioi linkki",
+  "Link copied to clipboard": "Linkki kopioitiin leikepöydälle",
+
+  "Search": "Hae",
+  "Search {siteTitle}": "Hae {siteTitle}",
+  "Type to Search": "kirjoita hakua",
+  "Enable dark mode": "Ota tumma tila käyttöön",
+
+  "Account": "Tili",
+  "Log in": "Kirjaudu sisään",
+  "Continue": "Jatkaa",
+  "Subscribe": "Tilaa",
+  "Your email": "Sähköpostiosoitteesi",
+  "Please check your inbox and click the link to complete the login.": "Tarkista postilaatikkosi ja napsauta linkkiä suorittaaksesi sisäänkirjautumisen.",
+  "Please check your inbox and click the link to confirm your subscription.": "Tarkista postilaatikko ja napsauta linkkiä vahvistaaksesi tilauksesi.",
+  "Please enter a valid email address!": "Ole hyvä ja syötä toimiva sähköpostiosoite!",
+  "An error occurred, please try again later.": "Tapahtui virhe, yritä myöhemmin uudelleen.",
+
+  "Already have an account?": "Onko sinulla jo tili?",
+  "Don't have an account yet?": "Eikö sinulla ole vielä tiliä?",
+
+  "This post is for paying subscribers only": "Tämä viesti on tarkoitettu vain maksaville tilaajille",
+  "This post is for subscribers only": "Tämä viesti on tarkoitettu vain tilaajille",
+  "This post is for subscribers on the ": "Tämä viesti on tilaajille ",
+  "This page is for paying subscribers only": "Tämä sivu on tarkoitettu vain maksaville tilaajille",
+  "This page is for subscribers only": "Tämä sivu on tarkoitettu vain tilaajille",
+  "This page is for subscribers on the ": "Tämä sivu on tilaajille ",
+  "Upgrade your account": "Päivitä käyttäjätilisi",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Liity uutiskirjeeseen saadaksesi uusimmat päivitykset postilaatikkoosi."
+}

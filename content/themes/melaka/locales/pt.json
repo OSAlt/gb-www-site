@@ -1,0 +1,50 @@
+{
+  "Loading": "Carregando",
+  "More Posts": "Mais mensagens",
+
+  "Recent Posts": "Postagens recentes",
+  "Featured Post": "Post em destaque",
+  "Page Not Found": "Página não encontrada",
+  "Load Comments": "Comentários",
+  "You might also like": "Você pode estar interessado em",
+  "Tags": "Tag",
+  "Authors": "Autores",
+  "Navigation": "Navegação",
+  "Published with {ghostLink} & {themeLink}": "Publicado com {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Compartilhar no Twitter",
+  "Share on Facebook": "Compartilhar no Facebook",
+  "Share on LinkedIn": "Compartilhar no LinkedIn",
+  "Share on Pinterest": "Compartilhar no Pinterest",
+  "Share via Email": "Compartilhar via e-mail",
+  "Copy link": "Link de cópia",
+  "Link copied to clipboard": "Link copiado para a área de transferência",
+
+  "Search": "Pesquisa",
+  "Search {siteTitle}": "Pesquisa {siteTitle}",
+  "Type to Search": "Escreva para pesquisar",
+  "Enable dark mode": "Ativar modo escuro",
+
+  "Account": "Conta",
+  "Log in": "Assinar em",
+  "Continue": "Continuar",
+  "Subscribe": "Se inscrever",
+  "Your email": "Seu endereço de email",
+  "Please check your inbox and click the link to complete the login.": "Verifique sua caixa de entrada e clique no link para concluir o login.",
+  "Please check your inbox and click the link to confirm your subscription.": "Verifique sua caixa de entrada e clique no link para confirmar sua assinatura.",
+  "Please enter a valid email address!": "Por favor insira um endereço de e-mail válido!",
+  "An error occurred, please try again later.": "Ocorreu um erro. Por favor tente novamente mais tarde.",
+
+  "Already have an account?": "já tem uma conta?",
+  "Don't have an account yet?": "Não tem uma conta ainda?",
+
+  "This post is for paying subscribers only": "Esta postagem é apenas para assinantes pagantes",
+  "This post is for subscribers only": "Este post é apenas para assinantes",
+  "This post is for subscribers on the ": "Este post é para assinantes do ",
+  "This page is for paying subscribers only": "Esta página é apenas para assinantes pagantes",
+  "This page is for subscribers only": "Esta página é apenas para assinantes",
+  "This page is for subscribers on the ": "Esta página é para assinantes do ",
+  "Upgrade your account": "Atualize sua conta",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Participe do boletim para receber as atualizações mais recentes em sua caixa de entrada."
+}

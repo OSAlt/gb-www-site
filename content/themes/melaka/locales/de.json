@@ -1,0 +1,51 @@
+{
+  "Loading": "Beladung",
+  "More Posts": "Mehr Artikel",
+
+  "Recent Posts": "kürzliche Artikel",
+  "Featured Post": "Featured Artikel",
+  "Page Not Found": "Seite nicht gefunden",
+  "Load Comments": "Bemerkungen",
+  "You might also like": "Sie könnten daran interessiert sein",
+  "Tags": "Stichworte",
+  "Authors": "Autoren",
+  "Navigation": "Navigation",
+  "Published with {ghostLink} & {themeLink}": "Veröffentlicht mit {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Auf Twitter teilen",
+  "Share on Facebook": "Auf Facebook teilen",
+  "Share on LinkedIn": "Auf LinkedIn teilen",
+  "Share on Pinterest": "Auf Pinterest teilen",
+  "Share via Email": "Teilen Sie per E-Mail",
+  "Copy link": "Link kopieren",
+  "Link copied to clipboard": "Link in die Zwischenablage kopiert",
+
+  "Search": "Suche",
+  "Search {siteTitle}": "Suche {siteTitle}",
+  "Type to Search": "Tippe um zu suchen",
+  "Enable dark mode": "Schakel de donkere modus in",
+
+  "Account": "Konto",
+  "Log in": "Einloggen",
+  "Log out": "Ausloggen",
+  "Continue": "Fortsetzen",
+  "Subscribe": "Abonnieren",
+  "Your email": "Deine E-Mail-Adresse",
+  "Please check your inbox and click the link to complete the login.": "Bitte überprüfen Sie Ihren Posteingang und klicken Sie auf den Link, um die Anmeldung abzuschließen.",
+  "Please check your inbox and click the link to confirm your subscription.": "Bitte überprüfen Sie Ihren Posteingang und klicken Sie auf den Link, um Ihr Abonnement zu bestätigen.",
+  "Please enter a valid email address!": "Bitte geben Sie eine gültige E-Mail-Adresse ein!",
+  "An error occurred, please try again later.": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+
+  "Already have an account?": "Hast du schon ein Konto?",
+  "Don't have an account yet?": "Sie haben noch keinen Account?",
+
+  "This post is for paying subscribers only": "Dieser Beitrag ist nur für zahlende Abonnenten",
+  "This post is for subscribers only": "Dieser Beitrag ist nur für Abonnenten",
+  "This post is for subscribers on the ": "Dieser Beitrag ist für Abonnenten der ",
+  "This page is for paying subscribers only": "Diese Seite ist nur für zahlende Abonnenten",
+  "This page is for subscribers only": "Dieser Seite ist nur für Abonnenten",
+  "This page is for subscribers on the ": "Diese Seite ist für Abonnenten der ",
+  "Upgrade your account": "Aktualisieren Sie Ihr Konto",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Treten Sie dem Newsletter bei, um die neuesten Updates in Ihrem Posteingang zu erhalten"
+}

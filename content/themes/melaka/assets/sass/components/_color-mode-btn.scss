@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  Components > Color Mode Button
+\*------------------------------------*/
+
+.c-color-mode-btn {
+  display: flex;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+
+  &__icon {
+    width: $space-24;
+    height: $space-24;
+    background-image: var(--color-mode-icon);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "Loading": "het laden",
+  "More Posts": "Meer berichten",
+
+  "Recent Posts": "recente berichten",
+  "Featured Post": "Aanbevolen bericht",
+  "Page Not Found": "Pagina niet gevonden",
+  "Load Comments": "Comments",
+  "You might also like": "U zou geïnteresseerd kunnen zijn in",
+  "Tags": "Tags",
+  "Authors": "auteurs",
+  "Navigation": "Navigatie",
+  "Published with {ghostLink} & {themeLink}": "Gepubliceerd met {ghostLink} & {themeLink}",
+
+  "Share on Twitter": "Delen op Twitter",
+  "Share on Facebook": "Delen op Facebook",
+  "Share on LinkedIn": "Delen op LinkedIn",
+  "Share on Pinterest": "Delen op Pinterest",
+  "Share via Email": "Deel via E-mail",
+  "Copy link": "Kopieer link",
+  "Link copied to clipboard": "Link gekopieerd naar klembord",
+
+  "Search": "Zoeken",
+  "Search {siteTitle}": "Zoeken {siteTitle}",
+  "Type to Search": "Type om te zoeken",
+  "Enable dark mode": "Aktivieren Sie den Dunkelmodus",
+
+  "Account": "Account",
+  "Log in": "Aanmelden",
+  "Continue": "Doorgaan met",
+  "Subscribe": "abonneren",
+  "Your email": "jouw e-mailadres",
+  "Please check your inbox and click the link to complete the login.": "Controleer uw inbox en klik op de link om het inloggen te voltooien.",
+  "Please check your inbox and click the link to confirm your subscription.": "Controleer je inbox en klik op de link om je abonnement te bevestigen.",
+  "Please enter a valid email address!": "Gelieve een geldig e-mailadres in te geven!",
+  "An error occurred, please try again later.": "Er is een fout opgetreden, probeer het later opnieuw.",
+
+  "Already have an account?": "Heb je al een account?",
+  "Don't have an account yet?": "Heb je nog geen account?",
+
+  "This post is for paying subscribers only": "Dit bericht is alleen voor betalende abonnees",
+  "This post is for subscribers only": "Dit bericht is alleen voor abonnees",
+  "This post is for subscribers on the ": "Dit bericht is voor abonnees op de ",
+  "This page is for paying subscribers only": "Deze pagina is alleen voor betalende abonnees",
+  "This page is for subscribers only": "Dit pagina is alleen voor abonnees",
+  "This page is for subscribers on the ": "Deze pagina is voor abonnees op de ",
+  "Upgrade your account": "Je account upgraden",
+
+  "Join the newsletter to receive the latest updates in your inbox.": "Word lid van de nieuwsbrief om de laatste updates in uw inbox te ontvangen."
+}
