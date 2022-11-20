@@ -13,7 +13,7 @@
     "postinstall": "bower install"
   },
   "dependencies": {
-    "@primer/css": "^15.2.0",
+    "@primer/css": "^20.0.0",
     "clipboard": "^2.0.8",
     "concat": "^3.0.0",
     "evil-icons": "^1.10.1",
