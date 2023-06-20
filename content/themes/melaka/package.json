@@ -44,7 +44,7 @@
     "gulp": "^4.0.2",
     "gulp-rtlcss": "^1.4.1",
     "gulp-zip": "^5.1.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^9.0.0"
   },
   "author": {
     "name": "Aspire Themes",
