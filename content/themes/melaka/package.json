@@ -23,7 +23,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.1.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.0.0",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^5.0.0",
     "gulp-size": "^5.0.0",
